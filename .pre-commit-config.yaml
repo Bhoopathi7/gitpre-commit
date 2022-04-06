@@ -15,3 +15,8 @@ repos:
   hooks:
     - id: black
       args: [--diff, --check]
+- repo: https://github.com/pre-commit/mirrors-pylint
+  rev: v3.0.0a3
+  hooks:
+    - id: pylint
+      args: [--disable=all, --enable=unused-import]
