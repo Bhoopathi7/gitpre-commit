@@ -2,5 +2,7 @@ repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v3.3.0
   hooks:
-    - id: no-commit-to-branch
-      args: ['--branch', 'master']
+      # - id: no-commit-to-branch
+      #description: Main branch not allowed
+      #args: ['--branch', 'main']
+    - id: requirements-txt-fixer
