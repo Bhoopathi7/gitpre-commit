@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.3.0
+  rev: v4.1.0
   hooks:
       # - id: no-commit-to-branch
       #description: Main branch not allowed
@@ -8,5 +8,5 @@ repos:
     - id: requirements-txt-fixer
     - id: trailing-whitespace
     - id: detect-private-key
-      # - id: check-shebang-scripts-are-executable
+    - id: check-shebang-scripts-are-executable
     - id: check-merge-conflict
