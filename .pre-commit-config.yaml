@@ -19,9 +19,9 @@ repos:
   rev: v3.0.0a3
   hooks:
     - id: pylint
-      args: [--disable=all, --check=unused-import]
+      args: [--disable=all, --enable=unused-import]
 - repo: https://github.com/hadialqattan/pycln
   rev: v1.2.5 # Possible releases: https://github.com/hadialqattan/pycln/releases
   hooks:
     - id: pycln
-      args: [--config=pyproject.toml]
+      args: [--check, --diff]
