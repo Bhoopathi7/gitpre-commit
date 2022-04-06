@@ -10,3 +10,9 @@ repos:
     - id: detect-private-key
     - id: check-shebang-scripts-are-executable
     - id: check-merge-conflict
+- repo: https://github.com/ambv/black
+  rev: 22.3.0
+  hooks:
+    - id: black
+      args: [--diff, --check]
+      fmt: off
