@@ -6,3 +6,7 @@ repos:
       #description: Main branch not allowed
       #args: ['--branch', 'main']
     - id: requirements-txt-fixer
+    - id: trailing-whitespace
+    - id: detect-private-key
+      # - id: check-shebang-scripts-are-executable
+    - id: check-merge-conflict
