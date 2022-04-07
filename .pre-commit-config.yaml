@@ -25,3 +25,11 @@ repos:
   hooks:
     - id: pycln
       args: [--check, --diff]
+- repo: local #pre-commit install --hook-type commit-msg
+  hooks:
+    - id: jira-ticket
+      name: check for jira ticket
+      language: pygrep
+      entry: '\A(?![A-Z]+-[0-9]+)'
+      args: [--multiline]
+      stages: [commit-msg]
